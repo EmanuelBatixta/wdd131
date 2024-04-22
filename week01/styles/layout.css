@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+header{
+    background: skyblue;
+    grid-column: 1/5;
+    
+}
+
+nav{
+    display: flex;
+    grid-column: 1/5;
+    background: rgb(95, 157, 182);
+    justify-content: space-around;
+    padding: .5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    grid-column: 1/4;
+    background: violet;
+}
+
+aside{
+    grid-column: 4;
+    background-color: #ccc;
+}
+
+footer{
+    grid-column: 1/5;
+    background: skyblue;
+}
