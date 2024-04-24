@@ -111,6 +111,14 @@ footer{
     grid-area: aside;
 }
 
+.resources a{
+    color:var(--second-color);
+}
+
+.resources a:hover{
+    color:var(--first-color)
+}
+
 .index-profile{
     float: right;
     width: 150px;
@@ -123,3 +131,8 @@ footer{
     margin:1rem;
 }
 
+@media only screen and (max-width:780px) {
+    .index-main{
+        grid-template-areas: "main main main" "aside aside aside";
+    }
+}
