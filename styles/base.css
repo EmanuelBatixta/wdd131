@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --text-color: #DCFF00;
+    --text-color-two: #ffcc01;
+    --first-color: #00CDE8;
+    --second-color: #2893A1;
+    --third-color: #00515C;
+}
+
+/* General Configurations */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background: var(--third-color);
+    text-align: center;
+    padding: 1rem 0 0 0;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: var(--third-color);
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: var(--text-color);
+        
+}
+
+.myname{
+    color:var(--text-color-two);
+}
+
+footer{
+    text-align: center;
+    background: var(--third-color);
+    padding: 1rem;
+    color: white;
+}
+
+#lastModified{
+    color: var(--text-color-two);
+}
+
+/* main configuration */
+.index-main{
+    display: grid;
+    max-width: 95vw;
+    grid-template-areas: "main main aside";
+    gap: 1rem;
+    justify-items: center;
+    margin: 1rem auto;
+}
+
+.card{
+    border-radius: 1rem;
+    border: solid 1px #00000052; 
+}
+
+.resources ul{
+    padding: 3rem;
+    margin: auto;
+}
+
+.card h3{
+    text-align: center;
+    color: var(--text-color);
+    background: var(--third-color);
+    border-radius: 1rem 1rem 0 0 ;
+    padding:.5rem;
+    width: 100%;
+}
+
+.card h4{
+    text-align: center;
+    margin: .3rem;
+}
+
+.card div{
+    display: flex;
+    align-items: center;
+    margin: 1rem 1rem 3rem 1rem ;
+}
+
+.information{
+    grid-area: main;
+}
+
+.resources{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: aside;
+}
+
+.index-profile{
+    float: right;
+    width: 150px;
+    margin-left: .3rem    
+}
+
+.flag{
+    float: left;
+    width: 200px;
+    margin:1rem;
+}
+
