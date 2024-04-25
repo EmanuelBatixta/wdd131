@@ -112,12 +112,12 @@ footer{
 }
 
 .resources a{
-    color:var(--second-color);
+    color:black;
 }
 
-.resources a:hover{
+/*.resources a:hover{
     color:var(--first-color)
-}
+}*/
 
 .index-profile{
     float: right;
