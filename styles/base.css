@@ -45,10 +45,6 @@ nav a:hover{
         
 }
 
-.myname{
-    color:var(--text-color-two);
-}
-
 footer{
     text-align: center;
     background: var(--third-color);
@@ -57,7 +53,7 @@ footer{
 }
 
 #lastModified{
-    color: var(--text-color-two);
+    color: var(--text-color);
 }
 
 /* main configuration */
@@ -112,12 +108,12 @@ footer{
 }
 
 .resources a{
-    color:black;
+    color: var(--third-color);
 }
 
-/*.resources a:hover{
-    color:var(--first-color)
-}*/
+.resources a:hover{
+    color: var(--second-color);
+}
 
 .index-profile{
     float: right;
