@@ -80,7 +80,7 @@ footer{
     margin: auto;
 }
 
-.card h3{
+.card h2{
     text-align: center;
     color: var(--text-color);
     background: var(--third-color);
@@ -89,7 +89,7 @@ footer{
     width: 100%;
 }
 
-.card h4{
+.card h3{
     text-align: center;
     margin: .3rem;
 }
