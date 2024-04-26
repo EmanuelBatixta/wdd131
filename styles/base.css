@@ -115,6 +115,10 @@ footer{
     color: var(--second-color);
 }
 
+.index-resources li{
+    margin: .5rem;
+}
+
 .index-profile{
     float: right;
     width: 150px;
