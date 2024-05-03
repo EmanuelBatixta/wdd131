@@ -76,6 +76,10 @@ h2{
     grid-template-columns: 1fr;
 }
 
+.temples-album img{
+    max-width: 20rem;
+}
+
 .temples-album figure{
     display: flex;
     flex-direction: column;
@@ -101,9 +105,9 @@ footer{
 
 .hamburguer{
     position: absolute;
-    top: 2.4rem;
+    top: 5rem;
     right: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
     border: none;
     background: none;
@@ -139,8 +143,5 @@ footer{
     .temples-album{
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(3,1fr);
-    }
-    .temples-album img{
-        max-width: 13rem;
     }
 }
