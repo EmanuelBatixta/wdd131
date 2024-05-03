@@ -99,7 +99,7 @@ footer{
     color: var(--color-three);
 }
 
-.ham-menu{
+.hamburguer{
     position: absolute;
     top: 2.4rem;
     right: 2rem;
@@ -110,11 +110,11 @@ footer{
     cursor: pointer;
 }
 
-.ham-menu::before{
+.hamburguer::before{
     content: "☰";
 }
 
-.ham-menu.open::before{
+.hamburguer.open::before{
     content: "✕";
 }
 
@@ -127,7 +127,7 @@ footer{
         text-align: center;
         padding: 1rem;
     }
-    .ham-menu{
+    .hamburguer{
         display: none;
     }    
     .temples-nav{

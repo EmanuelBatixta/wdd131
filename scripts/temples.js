@@ -8,7 +8,7 @@ let lastModified = document.lastModified; //define variable
 document.querySelector('#lastModified').innerHTML = `Last Modification: ${lastModified}`; //add in html tag
 
 //The function of hamburguer menu
-const hamButton = document.querySelector('.ham-menu');
+const hamButton = document.querySelector('.hamburguer');
 const navigation = document.querySelector('.temples-nav');
 
 hamButton.addEventListener('click', () => {
