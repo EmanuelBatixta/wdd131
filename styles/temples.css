@@ -52,6 +52,7 @@ h1{
 
 .temples-nav .active{
     color: var(--color-three);
+    text-decoration: overline 1px var(--color-three);
 }
 
 /* Main content */
