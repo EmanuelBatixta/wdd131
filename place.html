@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place | Emanuel Jonatas</title>
+    <meta name="author" content="Emanuel Jonatas">
+    <meta name="description" content="A website to pratice my skills with CSS, HTML and javascript.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Greece</h1>
+    </header>
+    <main class="hero">
+        <picture>
+            <source media="(min-width: 992px )" srcset="images/hero-large.webp">
+            <source media="(min-width: 768px )" srcset="images/hero-medium.webp">
+            <img src="images/hero-small.webp" alt="A view of the sea in the Greece" width="600" >
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="content">
+                <p class="title">Area: <span> </span></p>
+                <p class="title">Population: <span> </span></p>
+                <p class="title">Capital: <span> </span></p>
+                <p class="title">Languages: <span> </span></p>
+                <p class="title">Currency: <span> </span></p>
+                <p class="title">Time Zone: <span> </span></p>
+                <p class="title">Calling Code: <span> </span></p>
+                <p class="title">Internet TLD: <span> </span></p>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="content">
+                <p class="title">Temperature: <span> </span></p>
+                <p class="title">Conditions: <span> </span></p>
+                <p class="title">Wind: <span> </span></p>
+                <p class="title">Wind Chill: <span> </span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> ⚡Emanuel Jonatas⚡ Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
