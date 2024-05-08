@@ -39,7 +39,7 @@ header{
 }
 
 .weather h2::after{
-    content: url('/images/weather-icon.svg');
+    content: url('images/weather-icon.svg');
 }
 
 .weather,
