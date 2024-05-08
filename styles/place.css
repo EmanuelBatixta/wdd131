@@ -27,9 +27,14 @@ header{
     
 }
 
+.hero{
+    display: flex;
+    justify-content: center;
+    background-color: var(--medium-blue);
+}
+
 .hero source, 
 .hero img{
-    
     max-width: 100%;
 }
 
@@ -74,4 +79,48 @@ footer{
 #lastModified{
     margin: .2rem 0;
     font-weight: bold;
+}
+
+@media only screen and (min-width:992px){
+
+    .hero{
+        position: relative;
+    }
+
+    .weather,
+    .data{
+        position: absolute;
+        background: rgba(255, 255, 255, 0.75);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .data{
+        left: 3rem;
+        top: 15vh;
+    }
+
+    .weather{
+        right: 2rem;
+        top: 45vh;
+    }
+
+    .weather h2,
+    .data h2{
+        padding: 1rem;
+        position: absolute;
+        left: -1rem;
+        text-align: left;
+        background: var(--dark-blue);
+        color: var(--primary);
+        width: 10rem;
+    }
+
+    .weather h2::after{
+        margin-left: 1rem;
+        content: '⛅';
+    }
+
+    table{
+        margin-top: 5rem;
+    }
 }
