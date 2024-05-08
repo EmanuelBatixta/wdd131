@@ -27,8 +27,14 @@ header{
     
 }
 
+.hero source, 
+.hero img{
+    
+    max-width: 100%;
+}
+
 .weather h2::after{
-    content: "⛅";
+    content: url('/images/weather-icon.svg');
 }
 
 .weather,
@@ -39,10 +45,22 @@ header{
     gap: 1rem;
     align-items: center;
     text-align: right;
+    padding: 1rem;
+}
+
+.weather{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .title{
     font-weight: bold;
+    text-align: right;
+    padding: .1rem;
+}
+
+td{
+    text-align: left;
+    padding-left: .2rem;
 }
 
 footer{

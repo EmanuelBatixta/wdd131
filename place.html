@@ -14,32 +14,68 @@
         <h1>Greece</h1>
     </header>
     <main class="hero">
-        <picture>
+        <picture class="hero">
             <source media="(min-width: 992px )" srcset="images/hero-large.webp">
             <source media="(min-width: 768px )" srcset="images/hero-medium.webp">
-            <img src="images/hero-small.webp" alt="A view of the sea in the Greece" width="600" >
+            <img src="images/hero-small.webp" alt="A view of the sea in the Greece" width="767" >
         </picture>
         <section class="data">
             <h2>Data</h2>
-            <div class="content">
-                <p class="title">Area: <span> </span></p>
-                <p class="title">Population: <span> </span></p>
-                <p class="title">Capital: <span> </span></p>
-                <p class="title">Languages: <span> </span></p>
-                <p class="title">Currency: <span> </span></p>
-                <p class="title">Time Zone: <span> </span></p>
-                <p class="title">Calling Code: <span> </span></p>
-                <p class="title">Internet TLD: <span> </span></p>
-            </div>
+            <table class="content">
+                <tr>
+                    <td class="title">Area: </td>
+                    <td>131,957 km²</td>                       
+                </tr>
+                <tr>
+                    <td class="title">Population: </td>
+                    <td>10.43 million</td>
+                </tr>
+                <tr>
+                    <td class="title">Capital: </td>
+                    <td>Athens</td>
+                </tr>
+                <tr>
+                    <td class="title">Languages: </td>
+                    <td>Greek, Modern Greek</td>
+                </tr>
+                <tr>
+                    <td class="title">Currency: </td>
+                    <td>Euro</td>
+                </tr>
+                <tr>
+                    <td class="title">Time Zone: </td>
+                    <td>UTC+3</td>
+                </tr>
+                <tr>
+                    <td class="title">Calling Code: </td>
+                    <td>+30</td>
+                </tr>
+                <tr>
+                    <td class="title">Internet TLD: </td>
+                    <td>.gr</td>
+                </tr>
+            </table>
         </section>
         <section class="weather">
             <h2>Weather</h2>
-            <div class="content">
-                <p class="title">Temperature: <span> </span></p>
-                <p class="title">Conditions: <span> </span></p>
-                <p class="title">Wind: <span> </span></p>
-                <p class="title">Wind Chill: <span> </span></p>
-            </div>
+            <table class="content">
+                <tr>
+                    <td class="title">Temerature: </td>
+                    <td>18°C</td>
+                </tr>
+                <tr>
+                    <td class="title">Conditions: </td>
+                    <td>Clear with periodic clouds</td>
+                </tr>
+                <tr>
+                    <td class="title">Wind: </td>
+                    <td>5 km/h</td>
+                </tr>
+                <tr>
+                    <td class="title">Wind Chill: </td>
+                    <td id="windChill"></td>
+                </tr>
+            </table>
         </section>
     </main>
     <footer>
