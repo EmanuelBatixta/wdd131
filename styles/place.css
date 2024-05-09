@@ -38,9 +38,21 @@ header{
     max-width: 100vw;
 }
 
-.weather h2::after{
+/* .weather h2::after{
     content: url('/images/weather-icon.svg');
+    
+} */
+
+.weather h2::after{
+    content: " ";
+    display: block;
+    background: url('/images/weather-icon.svg');
+    background-size: cover;
+    height: 5rem;
+    width: 5rem;   
+    margin: 0 auto;
 }
+
 
 .weather,
 .data{
@@ -96,12 +108,12 @@ footer{
 
     .data{
         left: 3rem;
-        top: 15vh;
+        top: 110px;
     }
 
     .weather{
         right: 2rem;
-        top: 45vh;
+        top: 300px;
     }
 
     .weather h2,
@@ -118,6 +130,12 @@ footer{
     .weather h2::after{
         margin-left: 1rem;
         content: '⛅';
+        background: none;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
     }
 
     table{
