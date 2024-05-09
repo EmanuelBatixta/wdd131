@@ -122,6 +122,7 @@ footer{
     .weather h2::after{
         margin-left: 1rem;
         content: '⛅';
+        display: contents;
     }
 
     svg{
