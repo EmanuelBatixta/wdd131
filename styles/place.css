@@ -24,7 +24,6 @@ header{
     background-color: #023E73;
     color: var(--primary);
     text-align: center;
-    
 }
 
 .hero{
@@ -41,6 +40,10 @@ header{
 /* .weather h2::after{
     content: url('./images/weather-icon.svg');
 } */
+
+.weather h2::after{
+    content: " ";
+}
 
 .weather,
 .data{
