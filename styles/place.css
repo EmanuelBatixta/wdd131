@@ -43,6 +43,8 @@ header{
 
 .weather h2::after{
     content: " ";
+    height: 0;
+    width: 0;
 }
 
 .weather,
