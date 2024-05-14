@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer";
+}
+
+header, footer{
+    background: rgb(12, 12, 48);
+    padding: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    display: grid;
+    padding: 1rem;
+    grid-area: main;
+}
+
+main img{
+    width: 400px;
+    height: 600px;
+    background: #000;
+    margin: 1rem auto;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+footer{
+    grid-area: footer;
+    flex-direction: column;
+}
