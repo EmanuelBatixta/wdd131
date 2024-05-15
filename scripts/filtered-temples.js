@@ -95,7 +95,7 @@ const temples = [
 function createTempleCard(filteredTemples) {
   document.querySelector(".temples-album").innerHTML = ``;
   filteredTemples.forEach(temple => {
-    let card = document.createElement("section");
+    let card = document.createElement("figure");
     let name = document.createElement("h3");
     let location = document.createElement("p");
     let dedication = document.createElement("p");
