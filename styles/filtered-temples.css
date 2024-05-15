@@ -87,7 +87,7 @@ h3{
     color: var(--color-four);
 }
 
-.temples-album section{
+.temples-album figure{
     display:flex;
     flex-direction: column;
     align-items: center;    
