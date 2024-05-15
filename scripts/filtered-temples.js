@@ -126,24 +126,49 @@ createTempleCard(temples);
 const oldtemple = document.querySelector("#old");
 oldtemple.addEventListener("click", ()=>{
   createTempleCard(temples.filter(temple => temple.dedicated <= "1900"));
+  oldtemple.setAttribute('class',"active");
+  newtemple.removeAttribute('class',"active");
+  bigtemple.removeAttribute('class',"active");
+  smalltemple.removeAttribute('class',"active");
+  hometemple.removeAttribute('class',"active");
 });
 
 const newtemple = document.querySelector("#new");
 newtemple.addEventListener("click", ()=>{
   createTempleCard(temples.filter(temple => temple.dedicated >= "2000"));
+  newtemple.setAttribute('class',"active");
+  oldtemple.removeAttribute('class',"active");
+  bigtemple.removeAttribute('class',"active");
+  smalltemple.removeAttribute('class',"active");
+  hometemple.removeAttribute('class',"active");
 });
 
 const bigtemple = document.querySelector("#big");
 bigtemple.addEventListener("click", ()=>{
   createTempleCard(temples.filter(temple => temple.area >= "90000"));
+  bigtemple.setAttribute('class',"active");
+  newtemple.removeAttribute('class',"active");
+  oldtemple.removeAttribute('class',"active");
+  smalltemple.removeAttribute('class',"active");
+  hometemple.removeAttribute('class',"active");
 });
 
 const smalltemple = document.querySelector("#small");
 smalltemple.addEventListener("click", ()=>{
   createTempleCard(temples.filter(temple => temple.area <= "10000"));
+  smalltemple.setAttribute('class',"active");
+  newtemple.removeAttribute('class',"active");
+  bigtemple.removeAttribute('class',"active");
+  oldltemple.removeAttribute('class',"active");
+  hometemple.removeAttribute('class',"active");
 });
 
 const hometemple = document.querySelector("#home");
 hometemple.addEventListener("click", ()=>{
   createTempleCard(temples);
+  hometemple.setAttribute('class',"active");
+  newtemple.removeAttribute('class',"active");
+  bigtemple.removeAttribute('class',"active");
+  smalltemple.removeAttribute('class',"active");
+  oldtemple.removeAttribute('class',"active");
 });
