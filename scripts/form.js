@@ -9,7 +9,7 @@ document.querySelector('#lastModified').innerHTML = `Last Modification: ${lastMo
 
 const products = [
     {
-        id:null,
+        id: "",
         name: "Choose a Product &#9662;",
         averagerating: 0
     },
@@ -46,10 +46,14 @@ function createProducts(productlist) {
         let options = document.createElement("option");
 
         options.setAttribute("value", product.id);
-        options.innerHTML = product.name;
+        if(product.id == ""){
+          options.setAttribute("disabled","disabled")
+          options.setAttribute("selected","selected")
 
+        }
+        
+        options.innerHTML = product.name;
         document.querySelector('#product').appendChild(options);
     });
 }
 createProducts(products)
-document.querySelector('#product').appendChild().innerHTML = `<option value="" disabled selected>Choose a Product &#9662;</option>`
