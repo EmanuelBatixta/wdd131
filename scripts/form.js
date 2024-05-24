@@ -51,5 +51,5 @@ function createProducts(productlist) {
         document.querySelector('#product').appendChild(options);
     });
 }
-
 createProducts(products)
+document.querySelector('#product').appendChild().innerHTML = `<option value="" disabled selected>Choose a Product &#9662;</option>`

@@ -14,7 +14,7 @@
     <form action="review.html" method="get">
         <label for="product"> Product Name
             <select name="product" id="product" required>
-                <!-- <option value="" disabled selected>Choose a Product &#9662;</option> -->
+                <option value="" disabled selected>Choose a Product &#9662;</option>
                 
             </select>
         </label>
@@ -22,15 +22,15 @@
         <fieldset>
             <label>Overall Ratting</label>
             <div class="overall">
-                <label for="star">&#9733;<input type="radio" name="star" id="onestar" required></label>
-                <label for="star">&#9733;&#9733;<input type="radio" name="star" id="twostar" required></label>
-                <label for="star">&#9733;&#9733;&#9733;<input type="radio" name="star" id="threestar" required></label>
-                <label for="star">&#9733;&#9733;&#9733;&#9733;<input type="radio" name="star" id="fourstar" required></label>
-                <label for="star">&#9733;&#9733;&#9733;&#9733;&#9733;<input type="radio" name="star" id="fivestar" required></label>
+                <label for="onestar">&#9733;<input type="radio" name="star" id="onestar" required></label>
+                <label for="twostar">&#9733;&#9733;<input type="radio" name="star" id="twostar" required></label>
+                <label for="threestar">&#9733;&#9733;&#9733;<input type="radio" name="star" id="threestar" required></label>
+                <label for="fourstar">&#9733;&#9733;&#9733;&#9733;<input type="radio" name="star" id="fourstar" required></label>
+                <label for="fivestar">&#9733;&#9733;&#9733;&#9733;&#9733;<input type="radio" name="star" id="fivestar" required></label>
             </div>
         </fieldset>    
 
-        <label for="installdate">Date of Installation<input type="date" name="installdate" id="date" required placeholder="mm/dd/yyyy"></label>
+        <label for="date">Date of Installation<input type="date" name="installdate" id="date" required></label>
 
         <Fieldset>
             <div>Which features did you find useful in the product? (check all that apply)</div>
@@ -41,8 +41,9 @@
         </Fieldset>
 
 
-        <label for="review">Written Review <span class="optional">(Optional)</span><input type="textarea" name="review" id="review"></label>
-        <label for="name">Your name <span class="optional">(Optional)</span><input type="text" name="name"></label>
+        <label for="review">Written Review <span class="optional">(Optional)</span><textarea name="review" id="review"></textarea></label>
+
+        <label for="name">Your name <span class="optional">(Optional)</span><input type="text" name="name" id="name"></label>
 
         <input type="submit" value="Post Review">
     </form>

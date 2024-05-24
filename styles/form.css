@@ -39,7 +39,6 @@ div{
 
 input[type="text"],
 input[type="date"],
-input[type="textarea"],
 select{
     padding: .75rem;
     font-size: .9rem;
@@ -91,6 +90,19 @@ input[type="checkbox"]:checked{
 .optional{
     font-size: .7rem;
     color: rgb(144, 0, 0);
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    min-width: 400px;
+    display: block;
+    border-radius: 6px;
+    background-color: #eeeeee;
+    border: 1px solid #e2e2e2;
+    padding: 1rem;
+    font-size: .9rem;
 }
 
 input[type="submit"]{
