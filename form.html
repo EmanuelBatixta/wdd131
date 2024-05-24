@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css" media="all">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <form action="review.html" method="get">
+        <label for="product"> Product Name
+            <select name="product" id="product" required>
+                <!-- <option value="" disabled selected>Choose a Product &#9662;</option> -->
+                
+            </select>
+        </label>
+
+        <fieldset>
+            <label>Overall Ratting</label>
+            <div class="overall">
+                <label for="star">&#9733;<input type="radio" name="star" id="onestar" required></label>
+                <label for="star">&#9733;&#9733;<input type="radio" name="star" id="twostar" required></label>
+                <label for="star">&#9733;&#9733;&#9733;<input type="radio" name="star" id="threestar" required></label>
+                <label for="star">&#9733;&#9733;&#9733;&#9733;<input type="radio" name="star" id="fourstar" required></label>
+                <label for="star">&#9733;&#9733;&#9733;&#9733;&#9733;<input type="radio" name="star" id="fivestar" required></label>
+            </div>
+        </fieldset>    
+
+        <label for="installdate">Date of Installation<input type="date" name="installdate" id="date" required placeholder="mm/dd/yyyy"></label>
+
+        <Fieldset>
+            <div>Which features did you find useful in the product? (check all that apply)</div>
+            <label for="durability"><input type="checkbox" name="durability" id="durability"> Durability</label>
+            <label for="ease"><input type="checkbox" name="ease" id="ease"> Ease of use</label>
+            <label for="performance"><input type="checkbox" name="performance" id="performance"> Performance</label>
+            <label for="design"><input type="checkbox" name="design" id="design"> Design</label>
+        </Fieldset>
+
+
+        <label for="review">Written Review <span class="optional">(Optional)</span><input type="textarea" name="review" id="review"></label>
+        <label for="name">Your name <span class="optional">(Optional)</span><input type="text" name="name"></label>
+
+        <input type="submit" value="Post Review">
+    </form>
+    <footer>
+        <p><span id="currentyear"></span> ⚡Emanuel Jonatas⚡ Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
