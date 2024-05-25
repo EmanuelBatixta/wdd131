@@ -56,4 +56,17 @@ function createProducts(productlist) {
         document.querySelector('#product').appendChild(options);
     });
 }
-createProducts(products)
+createProducts(products);
+
+const submitbt = document.querySelector('.submitbt');
+
+let actualCount = localStorage.getItem("submits");
+
+document.addEventListener('DOMContentLoaded', () => {
+  submitbt.addEventListener('submit', (event) => {
+    event.preventDefault();
+    actualCount++;
+    localStorage.setItem("submits", actualCount);
+  })
+});
+

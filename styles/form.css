@@ -89,7 +89,7 @@ input[type="checkbox"]:checked{
 
 .optional{
     font-size: .7rem;
-    color: rgb(144, 0, 0);
+    color:#000000;
 }
 
 textarea{
@@ -115,4 +115,10 @@ input[type="submit"]{
     font-weight: bold;
     cursor: pointer;
     color: aqua;
+    border-radius: 6px;
+    transition: all 2ms;
+}
+
+input[type="submit"]:hover{
+    background:rgba(2, 2, 63, .8);
 }
