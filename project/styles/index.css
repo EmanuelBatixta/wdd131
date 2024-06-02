@@ -141,7 +141,7 @@ footer a{
         font-family: 'Poppins', sans-serif;
         display: grid;
         grid-template-columns: 2fr 4fr 1fr;
-        grid-template-rows: 200px auto 150px;
+        grid-template-rows: auto auto 150px;
         grid-template-areas:
             "header header header"
             "aside main main"
