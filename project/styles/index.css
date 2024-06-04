@@ -171,6 +171,13 @@ footer a{
     main{
         margin: 1rem;
     }
+
+    .data-body{
+        grid-template-areas: "header"
+                             "aside"
+                             "main"
+                             "footer";
+    }
 }
 
 /*                 Index page                 */
@@ -336,3 +343,32 @@ h3{
 }
 
 /*                 Data page                 */
+
+table{
+    border: 1px solid black;
+    padding: 1rem;
+    color: var(--primary);
+    appearance: none;
+    border-collapse: collapse;
+}
+
+.line-name{
+    font-weight: bold;
+    padding: 0 1rem 0 .5rem;
+    background: var(--option);
+}
+
+caption{
+    color: var(--primary);
+    font-weight: bold;
+}
+td{
+    padding: .5rem;
+    border-bottom:1px solid var(--primary) ;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
