@@ -21,7 +21,7 @@
         <div class="header-title">
             <img src="images/logo.webp" alt="logo sanja">
             <div>
-                <h1>São José dos Campos</h1>
+                <h1>Sanja City</h1>
                 <h3>It's really good to live in São José</h3>
             </div>
         </div>
@@ -32,11 +32,16 @@
             <a href="data.html">Data</a>
         </nav>
     </header>
-    <aside class="attractions-aside">       
-    </aside>
+    <!-- <aside class="culture-aside"> 
+        <h2>Summary</h2>   
+        <ul>
+            <li><a href="#attractions">Attractions</a></li>
+            <li><a href="#foods">Foods</a></li>
+        </ul>   
+    </aside> -->
     <main>       
-        <section class="attractions">
-            <h2>Attractions in São José dos Campos</h2>
+        <section class="attractions" id="attractions">
+            <h2 class="culture-title">Attractions in São José dos Campos</h2>
             <div class="place">
                 <h3>São José City Park</h3>
                 <div class="place-content">
@@ -110,8 +115,8 @@
                 </div>
             </div>
         </section>
-        <section class="foods">
-            <h2>Tipic foods in São José</h2>
+        <section class="foods" id="foods">
+            <h2 class="culture-title">Tipic foods in São José</h2>
             <div class="food">
                 <h3>Bolinho Cairpira</h3>
                 <div class="food-content">
@@ -144,8 +149,14 @@
         </section>
     </main>
     <footer>
-        <p><span id="currentyear"></span>Emanuel Jonatas | Brazil</p>
-       
+        <a href="https://www.sjc.sp.gov.br/servicos/governanca/sao-jose-em-dados/"><img src="images/prefeitura-sjc.webp" alt="São José dos Campos Logo" class="logo" title="Website São José dos Campos city hall"></a>
+        <form action="thanks.html" method="get" class="newsletter">
+            <h2>Newsletter</h2>
+            <label for="fname">Name:<span class="required">*</span><input type="text" name="fname" id="fname" required></label>
+            <label for="mail">Email:<span class="required">*</span><input type="email" name="mail" id="mail" required></label>
+            <input type="submit" value="Subscribe">
+        </form>       
+        <p>All directs reserved:<br><span id="currentyear"></span>Emanuel Jonatas | Brazil</p>
     </footer>
 </body>
 

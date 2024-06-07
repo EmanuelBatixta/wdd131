@@ -21,7 +21,7 @@
         <div class="header-title">
             <img src="images/logo.webp" alt="logo sanja">
             <div>
-                <h1>São José dos Campos</h1>
+                <h1>Sanja City</h1>
                 <h3>It's really good to live in São José</h3>
             </div>
         </div>
@@ -33,18 +33,43 @@
         </nav>
     </header>
     <aside class="home-aside">
-        <form action="thanks.html" method="get">
+        <picture>
+            <source media="(min-width:1280px)" srcset="images/banhado.webp">
+            <source media="(min-width:600px)" srcset="images/banhado-gr.webp">
+            <img src="images/banhado.webp" alt="Banhado São José dos Campos">
+        </picture>
+    </aside>
+    <main class="main-index">
+        <div class="welcome">
+            <h2>You are Welcome to our home page</h2>
+            <p>This is a website to help you know a little more about this amazing city, callled São José dos Campos. Here you can find places, infos and a guide to travel in "Sanja City" (this is the most famous nickname).</p>
+        </div>
+
+        <section class="news">
+            <h2>Why I would like to know São José dos Campos?</h2>
+            <div class="news-card">
+                <a href="https://www.sjc.sp.gov.br/noticias/2022/marco/16/sao-jose-e-certificada-a-primeira-cidade-inteligente-do-brasil/"><img src="images/smartcity.webp" alt="smart city"></a>
+                <h3>The fisrt smart city in Brazil</h3>
+            </div>
+            <div class="news-card">
+                <a href="https://www.tecmundo.com.br/mercado/245906-criou-urna-eletronica-veja-historia-aparelho-votacao.html"><img src="images/urna.webp" alt="smart city"></a>
+                <h3>Creation of the electronic ballot box</h3>
+            </div>
+            <div class="news-card">
+                <a href="https://www.assobrav.com.br/noticias/curiosidades/quem-inventou-o-carro-a-alcool/"><img src="images/polara.webp" alt="smart city"></a>
+                <h3>The creation of alcohol engine</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.sjc.sp.gov.br/servicos/governanca/sao-jose-em-dados/"><img src="images/prefeitura-sjc.webp" alt="São José dos Campos Logo" class="logo" title="Website São José dos Campos city hall"></a>
+        <form action="thanks.html" method="get" class="newsletter">
             <h2>Newsletter</h2>
             <label for="fname">Name:<span class="required">*</span><input type="text" name="fname" id="fname" required></label>
             <label for="mail">Email:<span class="required">*</span><input type="email" name="mail" id="mail" required></label>
             <input type="submit" value="Subscribe">
         </form>       
-    </aside>
-    <main>
-        <p>This is a website to help you know a little more about this amazing city. Here you can find places, infos and a guide to travel in "Sanja City" (this is the most famous nickname).</p>
-    </main>
-    <footer>
-        <p><span id="currentyear"></span>Emanuel Jonatas | Brazil</p>
+        <p>All directs reserved:<br><span id="currentyear"></span>Emanuel Jonatas | Brazil</p>
     </footer>
 </body>
 

@@ -19,11 +19,11 @@ body {
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 300px auto;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
         "header"
-        "main"
         "aside"
+        "main"
         "footer";
     gap: 5px;
     background: var(--accent2);
@@ -31,13 +31,14 @@ body {
 
 header,
 footer {
-    background: var(--primary);
     min-height: 120px;
 }
 
 header {
     grid-area: header;
     padding-top: 1rem;
+    background: var(--primary);
+
 }
 
 .header-title{
@@ -125,90 +126,52 @@ main {
 
 footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
     color:var(--accent1);
     grid-area: footer;
+    padding: 1rem 0 0 0;
+    background: var(--secondary);
 }
 
 footer a{
     color: var(--silver);
 }
 
-@media only screen and (min-width:600px) {
-    body {
-        font-family: 'Poppins', sans-serif;
-        display: grid;
-        grid-template-columns: 2fr 4fr 1fr;
-        grid-template-rows: auto auto 150px;
-        grid-template-areas:
-            "header header header"
-            "aside main main"
-            "footer footer footer";
-        gap: 5px;
-    }
+footer p{
+    padding: 1rem 0;
+    text-align: center;
+    background: var(--primary);
+    width: 100%;
+}
 
-    .header-title{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    nav a{
-        display: block;
-    }    
-    .hamburguer{
-        display: none;
-    }
-    nav{
-        display: flex;
-        flex-direction: row;
-    }
-
-    aside,
-    main{
-        margin: 1rem;
-    }
-
-    .data-body{
-        grid-template-areas: "header"
-                             "aside"
-                             "main"
-                             "footer";
-    }
+.logo{
+    width: 300px;
 }
 
 /*                 Index page                 */
-
-.flag {
-    width: 200px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-
 .home-aside {
     grid-area: aside;
     display: flex;
     justify-content: center;
-
+    align-items: start;
+    margin-top: 3rem;
 }
 
-form{
+.home-aside img{
+    width: 90vw;
+}
+
+.newsletter{
     display: flex;
     flex-direction: column;
     padding: 1rem;
     border-radius: 6px;
-    border: 1px solid #ccc;
     width: 300px;
 }
 
 form h2{
-    color: #0E3D59;
+    color:var(--accent2);
 }
 
 label{
@@ -232,7 +195,7 @@ input[type="email"]{
 input[type="submit"]{
     padding: 1rem;
     margin-top: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--secondary);
     border-radius: 6px;
     background: var(--primary);
     color: var(--accent1);
@@ -243,6 +206,35 @@ input[type="submit"]:hover{
     cursor: pointer;
 }
 
+.news{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.news-card{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    color: var(--primary);
+    padding: 1rem;
+    border-bottom: 1px solid var(--secondary);
+    text-align: center;
+}
+
+.news-card img{
+    width: 300px;
+    border-radius: 1rem;
+    transition: all .5s;
+}
+
+.news-card img:hover{
+    width: 310px;
+}
+
 /*                 Thanks page                 */
 .thanks-aside{
     display: flex;
@@ -250,14 +242,29 @@ input[type="submit"]:hover{
     padding: 1rem;
     color: var(--primary);
     text-align: center;
+    gap: .5rem;
 }
 
 #thanks-btn{
     max-width: 200px;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 /*                 Culture page                 */
+
+.culture-aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+}
+
+.culture-aside a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
 
 .attractions,
 .foods{
@@ -267,8 +274,8 @@ input[type="submit"]:hover{
     align-items: center;
 }
 
-section h2,
-section h3{
+.culture-title h2,
+.culture-title h3{
     text-align: center;
     margin-top: 2rem;
 }
@@ -335,14 +342,11 @@ h3{
     margin-top: 1rem;
 }
 
-.culture-body{
-    grid-template-areas: "header header header"
-                         "main main main"
-                         "footer footer footer";
-
-}
-
 /*                 Data page                 */
+
+aside{
+    grid-area: aside;
+}
 
 table{
     border: 1px solid black;
@@ -371,4 +375,117 @@ td{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.flag {
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flagcap{
+    width: 300px;
+}
+
+.map-info{
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+}
+.map{
+    width: 100%;
+    height: 40vh;
+    border: none;
+}
+
+@media only screen and (min-width:798px) {
+    body,
+    .data-body {
+        font-family: 'Poppins', sans-serif;
+        display: grid;
+        grid-template-columns: 2fr 4fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header header"
+            "aside main main"
+            "footer footer footer";
+        gap: 5px;
+    }
+
+    .culture-body{
+        grid-template-areas: "header header header"
+                             "main main main"
+                             "footer footer footer";
+    }
+
+    .header-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-title div{
+        margin: 0 0 0 2rem;
+        text-align: left;
+    }
+
+    nav a{
+        display: block;
+    }    
+    .hamburguer{
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    aside,
+    main{
+        margin: 1rem;
+    }
+
+    .main-index{
+        align-items: start;
+    }
+
+    .home-aside img{
+       max-width: 100%;
+    }
+
+    .news{
+        align-items: start;
+    }
+    
+    .news-card{
+        width: 100%;
+        align-items: start;
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .news-card h3{
+        margin-left: 1rem;  
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .logo{
+        grid-column: 1;
+    }
+    .newsletter{
+        grid-column: 2;
+    }
+
+    footer p{
+        grid-column: 1/3;
+    }
 }
